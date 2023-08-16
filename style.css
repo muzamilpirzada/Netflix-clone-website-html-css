@@ -48,11 +48,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 7vw;
 }
 .heading>h1{
     font-size: 3rem;
     font-weight: bold;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 
 }
 .heading>h2{
@@ -60,11 +62,13 @@
     font-weight: none;
     margin-block: 1.8rem;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 .heading>p{
     font-size:1.6rem ;
     margin-bottom: 1.333vw;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 .heading .email-btn{
   
@@ -76,17 +80,19 @@
 }
 .heading .email-btn>input{
     width: 60%;
-    height: 50%;
+    height: 63%;
     border: 2px solid #363333;
     border-radius: 0.2rem;
     background-color: #1e1e1dac;
     color: #fff;
-    
+    padding: 0 0 0 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 .heading .email-btn>input::placeholder{
     color: rgb(177, 170, 170);
     font-size: 1vw;
     padding: 0 0 0 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 .heading .email-btn>button{
     width: 35%;
@@ -96,8 +102,9 @@
     font-size: 2vw;
     font-weight: bold;
     border-radius: 0.2rem;
-    height: 50%;
+    height: 63%;
     margin-left: 0.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -450,3 +457,50 @@ input[type="radio"]{
 }
 
 
+/* media query */
+
+
+@media (max-width:956px){
+
+
+    /* header responsive */
+    .main-header .navbar{
+        width: 90%;
+    }
+    .main-header .navbar>img{
+         width: 11vw;
+         height: 5vh;
+     }
+
+     .main-header .heading{
+        padding-top: 7vw;
+     }
+
+     .main-header .heading>h1{
+        font-size: 3.6vw;
+     }
+     .main-header .heading>h2{
+        font-size: 2vw;
+
+     }
+     .main-header .heading>p{
+        font-size: 2vw;
+     }
+
+     /* email and button */
+    .main-header .heading .email-btn{
+        width:100%;
+         height:20%;
+     }
+     .main-header .heading .email-btn>input{
+        width: 35%;
+        height: 65%;
+     }
+
+     .main-header .heading .email-btn>button{
+        width: 20%;
+        height: 65%;
+     }
+     
+
+ }
